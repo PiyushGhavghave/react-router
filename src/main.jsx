@@ -46,8 +46,11 @@ const router = createBrowserRouter(
         <Route path='' element ={<Home />} />
         <Route path='about' element ={<About />} />
         <Route path='contact' element ={<Contact />} />
-        <Route path='user/:id' element ={<Param />} />
 
+        {/* useParams to access 'id' in 'Param' component */}
+        <Route path='user/:id' element ={<Param />} />    
+
+        {/* useLoaderData to get 'value returned by function' in 'Github' component */}
         <Route 
         path='github' 
         element ={<Github />} 
